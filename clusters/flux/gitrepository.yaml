@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: content-gitops
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://github.com/costas778/content-gitops
+  ref:
+    branch: main
